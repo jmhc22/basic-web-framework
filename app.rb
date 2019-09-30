@@ -13,7 +13,12 @@ get '/wild' do
 "This is wild"
 end
 
-get '/walrus' do
+get '/random-walrus' do
   @name = ["Woolly", "Tuskers", "John", "Bert"].sample
+  erb :index
+end
+
+get '/named-walrus' do
+  @name = params[:name]
   erb :index
 end
