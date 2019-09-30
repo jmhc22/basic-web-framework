@@ -18,7 +18,11 @@ get '/random-walrus' do
   erb :index
 end
 
-get '/named-walrus' do
+post '/named-walrus' do
   @name = params[:name]
   erb :index
+end
+
+get '/naming-form' do
+  erb :form
 end

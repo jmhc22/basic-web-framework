@@ -1,11 +1,12 @@
 <% if @name %>
 <center><h1> My name is <%= @name %> </h1></center>
-<% end %>
-
+<% else %>
 <center><form action="/named-walrus">
+  Please enter a name:
   <input type="text" name="name">
   <input type="submit" name="Submit">
 </form></center>
+<% end %>
 
 <style>
  img { width: 80%; }
