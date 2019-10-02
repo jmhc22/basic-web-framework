@@ -1,18 +1,13 @@
 <% if @name %>
 <center><h1> My name is <%= @name %> </h1></center>
-<% else %>
-<center><form action="/named-walrus">
-  Please enter a name:
-  <input type="text" name="name">
-  <input type="submit" name="Submit">
-</form></center>
 <% end %>
 
 <style>
- img { width: 80%; }
+ img { width: 98%; }
+ div { width: 80%; }
 </style>
 
-<div>
- <center><img style='border: 5px solid cyan'
- src='https://upload.wikimedia.org/wikipedia/commons/2/22/Pacific_Walrus_-_Bull_%288247646168%29.jpg'></center>
-<div>
+
+ <center><div style='border: 1px dashed black'><img style='border: 5px solid cyan'
+ src='https://upload.wikimedia.org/wikipedia/commons/2/22/Pacific_Walrus_-_Bull_%288247646168%29.jpg'>
+</div></center>
